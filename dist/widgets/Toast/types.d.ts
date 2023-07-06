@@ -4,7 +4,7 @@ export declare const types: {
     WARNING: string;
     INFO: string;
 };
-export declare type Types = typeof types[keyof typeof types];
+export type Types = typeof types[keyof typeof types];
 export interface ToastAction {
     text: string;
     url: string;

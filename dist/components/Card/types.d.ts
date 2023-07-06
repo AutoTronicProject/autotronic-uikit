@@ -5,7 +5,7 @@ export interface CardRibbonProps {
     variantColor?: keyof Colors;
     text: string;
 }
-export declare type CardTheme = {
+export type CardTheme = {
     background: string;
     boxShadow: string;
     boxShadowActive: string;

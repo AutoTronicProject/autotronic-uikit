@@ -1,5 +1,6 @@
+/// <reference types="react" />
 import { ButtonProps, Sizes, variants } from "../Button/types";
-export declare type ButtonMenuItemProps = {
+export type ButtonMenuItemProps = {
     isActive?: boolean;
     size?: Sizes;
 } & ButtonProps;

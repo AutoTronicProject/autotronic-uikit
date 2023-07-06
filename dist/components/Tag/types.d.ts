@@ -9,7 +9,7 @@ export declare const variants: {
     readonly BINANCE: "binance";
     readonly FAILURE: "failure";
 };
-export declare type Variants = typeof variants[keyof typeof variants];
+export type Variants = typeof variants[keyof typeof variants];
 export interface TagProps extends SpaceProps {
     variant?: Variants;
     startIcon?: ReactNode;

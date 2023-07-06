@@ -14,10 +14,10 @@ export declare const variants: {
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
 };
-export declare type Sizes = typeof sizes[keyof typeof sizes];
-export declare type Variants = typeof variants[keyof typeof variants];
-declare type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement> | AnchorHTMLAttributes<HTMLAnchorElement> | LinkProps;
-export declare type ButtonProps = {
+export type Sizes = typeof sizes[keyof typeof sizes];
+export type Variants = typeof variants[keyof typeof variants];
+type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement> | AnchorHTMLAttributes<HTMLAnchorElement> | LinkProps;
+export type ButtonProps = {
     variant?: Variants;
     size?: Sizes;
     startIcon?: ReactNode;
@@ -29,7 +29,7 @@ export declare type ButtonProps = {
     isLoading?: boolean;
     disabled?: boolean;
 } & ButtonTypes & SpaceProps;
-export declare type ButtonThemeVariant = {
+export type ButtonThemeVariant = {
     background: string;
     backgroundActive: string;
     backgroundHover: string;
@@ -39,7 +39,7 @@ export declare type ButtonThemeVariant = {
     boxShadowActive: string;
     color: string;
 };
-export declare type ButtonTheme = {
+export type ButtonTheme = {
     [key in Variants]: ButtonThemeVariant;
 };
 export {};
