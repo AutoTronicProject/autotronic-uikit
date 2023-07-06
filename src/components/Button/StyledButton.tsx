@@ -68,9 +68,15 @@ const StyledButton = styled.button<ButtonProps>`
   transition: background-color 0.2s;
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
 
+  border-radius: 0px !important;
+  border: 3px solid #2b7aaa !important;
+  background: linear-gradient(-45deg, rgba(175,41,134,0.5) 0%, rgba(22,6,66,0.5) 50%, rgba(43,122,170,0.5) 100%) !important;
+  transition: 0.5s !important;
+
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
-    background-color: ${getButtonVariantProp("backgroundHover")};
-    border-color: ${getButtonVariantProp("borderColorHover")};
+    // background-color: ${getButtonVariantProp("backgroundHover")};
+    // border-color: ${getButtonVariantProp("borderColorHover")};
+    opacity: 0.5 !important;
   }
 
   &:focus:not(:active) {

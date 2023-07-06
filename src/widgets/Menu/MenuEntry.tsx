@@ -46,7 +46,8 @@ const MenuEntry = styled.div<Props>`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+    // background-color: ${({ theme }) => theme.colors.tertiary};
+    background-color: rgba(0,0,0,0.5);
   }
 
   // Safari fix
