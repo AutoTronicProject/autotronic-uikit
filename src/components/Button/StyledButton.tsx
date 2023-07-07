@@ -73,6 +73,10 @@ const StyledButton = styled.button<ButtonProps>`
   background: linear-gradient(-45deg, rgba(175,41,134,0.5) 0%, rgba(22,6,66,0.5) 50%, rgba(43,122,170,0.5) 100%);
   transition: 0.5s;
 
+  // Latest
+  border: none;
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.75);
+
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     // background-color: ${getButtonVariantProp("backgroundHover")};
     // border-color: ${getButtonVariantProp("borderColorHover")};
