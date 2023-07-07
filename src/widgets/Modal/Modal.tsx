@@ -49,6 +49,7 @@ const Modal: React.FC<Props> = ({
   children,
   hideCloseButton = false,
   bodyPadding = "24px",
+  className = ''
 }) => (
   <StyledModal className={className}>
     <ModalHeader>
