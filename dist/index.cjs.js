@@ -1763,7 +1763,7 @@ var ModalHeader = styled__default["default"].div(templateObject_2$6 || (template
 var ModalTitle = styled__default["default"](Flex)(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var Modal = function (_a) {
     var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "24px" : _c;
-    return (React__default["default"].createElement(StyledModal, null,
+    return (React__default["default"].createElement(StyledModal, { className: className },
         React__default["default"].createElement(ModalHeader, null,
             React__default["default"].createElement(ModalTitle, null,
                 onBack && (React__default["default"].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
@@ -2106,7 +2106,7 @@ var Logo = function (_a) {
         React__default["default"].createElement(Icon$O, { className: "mobile-icon" }),
         React__default["default"].createElement(Logo$1, { className: "desktop-icon", isDark: isDark })));
     return (React__default["default"].createElement(Flex, null,
-        React__default["default"].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default["default"].createElement(Icon$t, { width: "24px", color: "textSubtle" })) : (React__default["default"].createElement(Icon$u, { width: "24px", color: "textSubtle" }))),
+        React__default["default"].createElement(MenuButton, { className: "thinborder-button", "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default["default"].createElement(Icon$t, { width: "24px", color: "textSubtle" })) : (React__default["default"].createElement(Icon$u, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default["default"].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default["default"].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$c;
@@ -2372,7 +2372,7 @@ var PanelFooter = function (_a) {
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
                 if (social.items) {
-                    return (React__default["default"].createElement(Dropdown, { key: social.label, position: "top", target: React__default["default"].createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React__default["default"].createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+                    return (React__default["default"].createElement(Dropdown, { key: social.label, position: "top", target: React__default["default"].createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React__default["default"].createElement(Link, { className: "panelfooter-linkbutton", external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
                 }
                 return (React__default["default"].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React__default["default"].createElement(Icon, __assign({}, iconProps))));
