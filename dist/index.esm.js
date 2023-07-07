@@ -802,7 +802,7 @@ var DropdownContent = styled.div(templateObject_1$v || (templateObject_1$v = __m
 var Container$4 = styled.div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent, DropdownContent);
 var Dropdown = function (_a) {
     var target = _a.target, _b = _a.position, position = _b === void 0 ? "bottom" : _b, children = _a.children;
-    return (React.createElement(Container$4, null,
+    return (React.createElement(Container$4, { className: "dropdown-container" },
         target,
         React.createElement(DropdownContent, { position: position }, children)));
 };
