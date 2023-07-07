@@ -646,8 +646,8 @@ var StyledButtonMenu = styled__default["default"].div(templateObject_1$D || (tem
 var templateObject_1$D;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes$1.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, onClick = _a.onClick, children = _a.children;
-    return (React__default["default"].createElement(StyledButtonMenu, { variant: variant }, React.Children.map(children, function (child, index) {
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.size, size = _c === void 0 ? sizes$1.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, onClick = _a.onClick, children = _a.children, className = _a.className;
+    return (React__default["default"].createElement(StyledButtonMenu, { className: className, variant: variant }, React.Children.map(children, function (child, index) {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
             onClick: onClick ? function () { return onClick(index); } : undefined,

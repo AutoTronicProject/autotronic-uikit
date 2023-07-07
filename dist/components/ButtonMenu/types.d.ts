@@ -10,4 +10,5 @@ export interface ButtonMenuProps {
     onClick?: (index: number) => void;
     size?: Sizes;
     children: React.ReactElement[];
+    className?: string;
 }
