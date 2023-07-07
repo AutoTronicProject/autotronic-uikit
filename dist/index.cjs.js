@@ -200,10 +200,10 @@ StyledButton.defaultProps = {
 var templateObject_1$I;
 
 var Button = function (_a) {
-    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, external = _a.external, isLoading = _a.isLoading, disabled = _a.disabled, className = _a.className;
+    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, external = _a.external, isLoading = _a.isLoading, disabled = _a.disabled, props = __rest(_a, ["startIcon", "endIcon", "children", "external", "isLoading", "disabled"]);
     var internalProps = external ? getExternalLinkProps() : {};
     var isDisabled = isLoading || disabled;
-    return (React__default["default"].createElement(StyledButton, __assign({}, internalProps, props, { className: className, isLoading: isLoading, disabled: isDisabled }),
+    return (React__default["default"].createElement(StyledButton, __assign({}, internalProps, props, { isLoading: isLoading, disabled: isDisabled }),
         React__default["default"].isValidElement(startIcon) &&
             React__default["default"].cloneElement(startIcon, {
                 mr: "0.5rem",
