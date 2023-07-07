@@ -28,6 +28,7 @@ export type ButtonProps = {
     external?: boolean;
     isLoading?: boolean;
     disabled?: boolean;
+    className?: string;
 } & ButtonTypes & SpaceProps;
 export type ButtonThemeVariant = {
     background: string;

@@ -200,10 +200,10 @@ StyledButton.defaultProps = {
 var templateObject_1$I;
 
 var Button = function (_a) {
-    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, external = _a.external, isLoading = _a.isLoading, disabled = _a.disabled, props = __rest(_a, ["startIcon", "endIcon", "children", "external", "isLoading", "disabled"]);
+    var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, external = _a.external, isLoading = _a.isLoading, disabled = _a.disabled, className = _a.className;
     var internalProps = external ? getExternalLinkProps() : {};
     var isDisabled = isLoading || disabled;
-    return (React__default["default"].createElement(StyledButton, __assign({}, internalProps, props, { isLoading: isLoading, disabled: isDisabled }),
+    return (React__default["default"].createElement(StyledButton, __assign({}, internalProps, props, { className: className, isLoading: isLoading, disabled: isDisabled }),
         React__default["default"].isValidElement(startIcon) &&
             React__default["default"].cloneElement(startIcon, {
                 mr: "0.5rem",
@@ -1769,7 +1769,7 @@ var Modal = function (_a) {
                 onBack && (React__default["default"].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
                     React__default["default"].createElement(Icon$17, { color: "primary" }))),
                 React__default["default"].createElement(Heading, null, title)),
-            !hideCloseButton && (React__default["default"].createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
+            !hideCloseButton && (React__default["default"].createElement(IconButton, { className: "dialog-close-button", variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
                 React__default["default"].createElement(Icon$U, { color: "primary" })))),
         React__default["default"].createElement(Flex, { flexDirection: "column", p: bodyPadding }, children)));
 };
@@ -2537,7 +2537,7 @@ var WalletCard = function (_a) {
 styled__default["default"](Link)(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React__default["default"].createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss }, connectors.map(function (entry, index) { return (React__default["default"].createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); })));
+    return (React__default["default"].createElement(Modal, { className: "wallet-connect-modal card", title: "Connect to a wallet", onDismiss: onDismiss }, connectors.map(function (entry, index) { return (React__default["default"].createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); })));
 };
 var templateObject_1$6;
 
