@@ -27,3 +27,4 @@ export { default as VaultsIcon } from "./Vaults";
 export { default as EggHouseIcon } from "./EggHouse";
 export { default as GithubIcon } from './Github';
 export { default as ListingIcon } from './Listing';
+export { default as DocsIcon } from './Docs';

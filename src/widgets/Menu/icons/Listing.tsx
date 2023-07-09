@@ -5,7 +5,7 @@ import { SvgProps } from "../../../components/Svg/types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 750 750" {...props}>
-			<image overflow="visible" width="746" height="747" id="Layer_3_xA0_Image" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuoAAALrCAYAAACoO6IDAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+			<image overflow="visible" width="746" height="747" id="Layer_3_xA0_Image" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuoAAALrCAYAAACoO6IDAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 			GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAf+JJREFUeNrsnQmAHFWd/99kJvfB
 			MSQBwh0SQrjCDXJ1wEA4BEHWXdEEQbkRRJZLlBBERBQRlFXkCASP9VxvVEDIX/EEDCOEMHIssoAc
 			AyQkISQh9f9V9ySZo7rrvVfv1dWfD/ymq6tfVXV3dXd9qvKtVy0KAHLPbtfcd4LcbCu19OELp17L
