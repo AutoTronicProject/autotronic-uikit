@@ -1187,7 +1187,7 @@ var Skeleton = function (_a) {
 };
 var templateObject_1$i, templateObject_2$8, templateObject_3$5, templateObject_4$2, templateObject_5$1;
 
-var Handle = styled__default["default"].div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n"])), function (_a) {
+var Handle = styled__default["default"].div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  // background-color: ", ";\n  // border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n\n  border-radius: 0;\n  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);\n  box-shadow: 3px 3px 10px 2px;\n"], ["\n  // background-color: ", ";\n  // border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n\n  border-radius: 0;\n  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);\n  box-shadow: 3px 3px 10px 2px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
 });
@@ -1198,7 +1198,7 @@ var Input = styled__default["default"].input(templateObject_2$7 || (templateObje
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-var StyledToggle = styled__default["default"].div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n"])), function (_a) {
+var StyledToggle = styled__default["default"].div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  // background-color: ", ";\n  // border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n\n\n  border-radius: 0;\n  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);\n"], ["\n  align-items: center;\n  // background-color: ", ";\n  // border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n\n\n  border-radius: 0;\n  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {

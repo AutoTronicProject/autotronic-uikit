@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Handle = styled.div`
-  background-color: ${({ theme }) => theme.toggle.handleBackground};
-  border-radius: 50%;
+  // background-color: ${({ theme }) => theme.toggle.handleBackground};
+  // border-radius: 50%;
   cursor: pointer;
   height: 32px;
   left: 4px;
@@ -11,6 +11,10 @@ export const Handle = styled.div`
   transition: left 200ms ease-in;
   width: 32px;
   z-index: 1;
+
+  border-radius: 0;
+  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);
+  box-shadow: 3px 3px 10px 2px;
 `;
 
 export const Input = styled.input`
@@ -36,8 +40,8 @@ export const Input = styled.input`
 
 const StyledToggle = styled.div<{ checked: boolean }>`
   align-items: center;
-  background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
-  border-radius: 24px;
+  // background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
+  // border-radius: 24px;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;
@@ -45,6 +49,10 @@ const StyledToggle = styled.div<{ checked: boolean }>`
   position: relative;
   transition: background-color 200ms;
   width: 72px;
+
+
+  border-radius: 0;
+  background: linear-gradient(-45deg,rgba(175,41,134,0.5) 0%,rgba(22,6,66,0.5) 50%,rgba(43,122,170,0.5) 100%);
 `;
 
 export default StyledToggle;
