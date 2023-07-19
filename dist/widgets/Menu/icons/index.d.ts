@@ -29,3 +29,4 @@ export { default as GithubIcon } from './Github';
 export { default as ListingIcon } from './Listing';
 export { default as DocsIcon } from './Docs';
 export { default as StakingIcon } from './Staking';
+export { default as LockerIcon } from './Locker';
