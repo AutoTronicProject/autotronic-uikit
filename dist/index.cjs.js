@@ -2573,10 +2573,10 @@ var templateObject_1$5, templateObject_2$2;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React__default["default"].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
+    return (React__default["default"].createElement(Modal, { className: "wallet-connect-modal card", title: "Your wallet", onDismiss: onDismiss },
         React__default["default"].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React__default["default"].createElement(Flex, { mb: "32px" },
-            React__default["default"].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/".concat(account), mr: "16px" }, "View on BscScan"),
+            React__default["default"].createElement(LinkExternal, { small: true, href: "https://etherscan.io/address/".concat(account), mr: "16px" }, "View on EtherScan"),
             React__default["default"].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default["default"].createElement(Flex, { justifyContent: "center" },
             React__default["default"].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {

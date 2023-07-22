@@ -14,7 +14,7 @@ interface Props {
 }
 
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal className="wallet-connect-modal card" title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
       bold
@@ -23,8 +23,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px">
-        View on BscScan
+      <LinkExternal small href={`https://etherscan.io/address/${account}`} mr="16px">
+        View on EtherScan
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>
