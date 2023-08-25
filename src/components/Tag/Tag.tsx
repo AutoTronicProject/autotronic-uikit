@@ -2,8 +2,8 @@ import React from "react";
 import { TagProps } from "./types";
 import { StyledTag } from "./StyledTag";
 
-const Tag: React.FC<TagProps> = ({ startIcon, endIcon, children, ...props }) => (
-  <StyledTag {...props}>
+const Tag: React.FC<TagProps> = ({ startIcon, endIcon, children, className, ...props }) => (
+  <StyledTag className={className} {...props}>
     {React.isValidElement(startIcon) &&
       React.cloneElement(startIcon, {
         mr: "0.5rem",

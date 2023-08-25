@@ -15,4 +15,5 @@ export interface TagProps extends SpaceProps {
     startIcon?: ReactNode;
     endIcon?: ReactNode;
     outline?: boolean;
+    className?: string;
 }
