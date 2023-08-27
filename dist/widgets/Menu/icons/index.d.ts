@@ -30,3 +30,5 @@ export { default as ListingIcon } from './Listing';
 export { default as DocsIcon } from './Docs';
 export { default as StakingIcon } from './Staking';
 export { default as LockerIcon } from './Locker';
+export { default as BuyBackIcon } from './BuyBack';
+export { default as LaunchpadIcon } from './Launchpad';
